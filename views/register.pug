@@ -1,0 +1,37 @@
+extends layout
+
+block body
+    body
+        form(action="" method="post" id="register_form")
+            div
+                .row
+                    div(class="col s4 offset-s4")
+                        form(class="col s12")
+                            .card
+                                .card-image
+                                    img(src="https://i.loli.net/2019/03/27/5c9b6391ba5a1.jpg")
+                                div(class="card-content light-blue-text text-darken-1")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3" id="parent_username")
+                                            label(for="username") Username
+                                            input(placeholder="Username" id="username" type="text" class="validate")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3" id="parent_password")
+                                            label(for="password") Password
+                                            input(placeholder="Password" id="password" type="password" class="validate")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3" id="parent_recheck")
+                                            label(for="recheck") Check
+                                            input(placeholder="Confirm your password" id="recheck" type="password" class="validate")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3" id="parent_phone_number")
+                                            label(for="phone_number") Phone Number
+                                            input(placeholder="Phone Number" id="phone_number" type="tel" class="validate")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3")
+                                            label(for="email") Email
+                                            input(placeholder="email" id="email" type="email" class="validate")
+                                    div(align="center")
+                                        button(class="wave-effect waves-teal btn-flat btn-small" id="submit") Register
+                                                i(class="material-icons right") person_add
+    script(type="text/javascript" src="javascripts/validate.js")

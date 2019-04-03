@@ -1,0 +1,27 @@
+extends layout
+
+block body
+    body
+        form(action="/login" method="post" id="login_form")
+            div(align="center")
+                .row
+                    div(class="col s4 offset-s4")
+                        form(class="col s12")
+                            div(class="card")
+                                .card-image
+                                    img(src="https://i.loli.net/2019/03/26/5c9a45c7d163c.jpg")
+                                div(class="card-content light-blue-text text-darken-1")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3")
+                                            input(placeholder="Username" id="username" type="text"
+                                            class="validate" align="center")
+                                    .row
+                                        div(class="input-filed col s6 offset-s3")
+                                            input(placeholder="Password" id="password" type="password" class="validate" align="center")
+                                    button(class="waves-effect waves-teal btn-flat btn-small" type="submit" name="action")
+                                        a(href="/login") Login
+                                            i(class="material-icons right") send
+                                    button(class="wave-effect waves-teal btn-flat btn-small")
+                                        a(href="/register") Register
+                                            i(class="mater    ial-icons right") person_add
+    script(type="text/javascript" src="javascripts/login.js")
