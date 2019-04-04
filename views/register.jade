@@ -69,7 +69,7 @@ html(lang='en')
             .container
                 .col-md-4.content-center
                     .card.card-login.card-plain
-                        form.form(method='post', action='http://127.0.0.1:3000/register/api/register')
+                        form.form(method='post', action='http://127.0.0.1:8081/register')
                             .header.header-primary.text-center
                                 .logo-container
                                     img(src='assets/img/now-logo.jpeg', alt='')
@@ -77,23 +77,33 @@ html(lang='en')
                                 .input-group.form-group-no-border.input-lg
                                     span.input-group-addon
                                         i.now-ui-icons.users_circle-08
-                                    input.form-control(type='text', name='username', placeholder='Username...')
+                                    input#username.form-control(type='text', name='username', placeholder='Username...', onblur='checkUserName()')
+                                .input-group.form-group-no-border.input-lg
+                                    span#nameInfo
                                 .input-group.form-group-no-border.input-lg
                                     span.input-group-addon
                                         i.now-ui-icons.text_caps-small
-                                    input.form-control(type='text', name='password', placeholder='Password...')
+                                    input#password.form-control(type='text', name='password', placeholder='Password...', onblur='checkPassword()')
+                                .input-group.form-group-no-border.input-lg
+                                    span#passwordInfo
                                 .input-group.form-group-no-border.input-lg
                                     span.input-group-addon
                                         i.now-ui-icons.text_caps-small
-                                    input.form-control(type='text', name='re_password', placeholder='Again-Password...')
+                                    input#repassword.form-control(type='text', name='re_password', placeholder='Again-Password...', onblur='checkRepassword()')
+                                .input-group.form-group-no-border.input-lg
+                                    span#repasswordInfo
                                 .input-group.form-group-no-border.input-lg
                                     span.input-group-addon
                                         i.now-ui-icons.text_caps-small
-                                    input.form-control(type='text', name='telephone', placeholder='Telephone...')
+                                    input#tel.form-control(type='text', name='telephone', placeholder='Telephone...', onblur='checktel()')
+                                .input-group.form-group-no-border.input-lg
+                                    span#telephoneInfo
                                 .input-group.form-group-no-border.input-lg
                                     span.input-group-addon
                                         i.now-ui-icons.text_caps-small
-                                    input.form-control(type='text', name='mail', placeholder='Mail...')
+                                    input#mail.form-control(type='text', name='mail', placeholder='Mail...', onblur='checkmail()')
+                                .input-group.form-group-no-border.input-lg
+                                    span#mailInfo
                             .footer.text-center
                                 input.btn.btn-primary.btn-round.btn-lg.btn-block(type='submit', value='Register')
             footer.footer
@@ -130,3 +140,4 @@ html(lang='en')
         script(src='assets/js/plugins/jquery.sharrre.js', type='text/javascript')
         // Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc
         script(src='assets/js/now-ui-kit.js?v=1.1.0', type='text/javascript')
+        script(type='text/javascript', src='/javascripts/check.js')
