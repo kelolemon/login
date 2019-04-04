@@ -38,6 +38,7 @@ function checkPassword(){
 //验证校验密码（和上面密码必须一致）
 function checkRepassword(){
     var repassword=document.getElementById("repassword").value.trim();
+    var password=document.getElementById("password").value.trim();
     //校验密码和上面密码必须一致
     if(repassword!==password){
         document.getElementById("repasswordInfo").innerHTML="两次输入的密码不一致";
