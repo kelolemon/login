@@ -24,7 +24,8 @@
    - model.js 为数据库的初始化
    - routes / login.js 进行登陆操作
    - routes / register.js 进行注册操作
-   - /public jade所需要的加载数据
+   - /public/assets jade所需要的加载数据
+   - /public/javascripts/check.js 前端验证
    - /views jade页面
        * error.jade 错误信息
        * home.jade 登陆成功后的页面
