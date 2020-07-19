@@ -7,6 +7,10 @@
   },
   "dependencies": {
     "constantinople": "^3.1.2",
+    "minimist": ">=0.2.1",
+    "mongoose": "^5.4.20",
+    "lodash": ">=4.17.19",
+    "clean-css": ">=4.1.11",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "dependencies": "0.0.1",
@@ -17,7 +21,6 @@
     "express": "^4.16.4",
     "http-errors": "~1.6.2",
     "jade": "^1.11.0",
-    "mongoose": "^5.4.20",
     "mongose": "0.0.2-security",
     "morgan": "^1.9.1",
     "pug": "^2.0.3",
