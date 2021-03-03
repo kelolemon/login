@@ -23,7 +23,7 @@
     "jade": "^1.11.0",
     "mongose": "0.0.2-security",
     "morgan": "^1.9.1",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "uglify-js": "^3.5.3",
